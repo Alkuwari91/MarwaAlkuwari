@@ -1914,6 +1914,57 @@ button,
     width: 2em; }
   #search form input[type="text"] {
     padding-right: 2.75em; }
+/* Existing styles */
+
+/* Add or replace this section with the following for the fixed sidebar */
+
+/* Sidebar */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px; /* Adjust the width as needed */
+  height: 100%;
+  background-color: #f5f6f7;
+  overflow-y: auto; /* Allows scrolling if the content overflows */
+  z-index: 1000; /* Ensures it's on top */
+  font-size: 0.9em;
+}
+
+#sidebar h2 {
+  font-size: 1.38889em;
+}
+
+#sidebar > .inner {
+  padding: 2.22222em 2.22222em 2.44444em 2.22222em;
+  width: 100%;
+}
+
+#main {
+  margin-left: 320px; /* Adjust to match the sidebar's width */
+  padding: 20px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1280px) {
+  #sidebar {
+    width: 24em;
+  }
+  #main {
+    margin-left: 26em; /* Ensure that main content adjusts with sidebar width */
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #sidebar {
+    width: 20em;
+  }
+  #main {
+    margin-left: 22em; /* Adjust for smaller screens */
+  }
+}
+
+/* Additional custom styles as required for other elements */
 
 #sidebar {
   -moz-flex-grow: 0;
