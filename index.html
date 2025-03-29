@@ -5,6 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marwa Alkuwari | Portfolio</title>
   <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .banner-img {
+      display: block;
+      margin: 0 auto;
+      max-width: 60%;
+      height: auto;
+    }
+    .button-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .button-grid div {
+      flex: 1 1 200px;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body class="is-preload">
 
@@ -22,9 +42,7 @@
 
         <!-- Banner Image -->
         <section>
-          <span class="image fit">
-            <img src="images/ai-main-banner.jpg" alt="Artificial Intelligence Banner" />
-          </span>
+          <img src="images/ai-main-banner.jpg" alt="Artificial Intelligence Banner" class="banner-img" />
         </section>
 
         <!-- Banner Text -->
@@ -38,12 +56,12 @@
             <strong>Profession:</strong> English Teacher, Ministry of Education, Qatar<br>
             <strong>Programs:</strong> Executive Master's in Leadership (QU), MSc Artificial Intelligence (Essex)<br>
             <strong>Email:</strong> marwa.alkuwari@gmail.com</p>
-            <ul class="actions">
-              <li><a href="MachineLearning.html" class="button big">Machine Learning</a></li>
-              <li><a href="IntelligentAgents.html" class="button big">Intelligent Agents</a></li>
-              <li><a href="Knowledge-Representation-and-Reasoning.html" class="button big">Knowledge Representation & Reasoning</a></li>
-              <li><a href="ResearchMethods.html" class="button big">Research Methods & Professional Practice</a></li>
-            </ul>
+            <div class="button-grid">
+              <div><a href="MachineLearning.html" class="button big">Machine Learning</a></div>
+              <div><a href="IntelligentAgents.html" class="button big">Intelligent Agents</a></div>
+              <div><a href="Knowledge-Representation-and-Reasoning.html" class="button big">Knowledge Representation & Reasoning</a></div>
+              <div><a href="ResearchMethods.html" class="button big">Research Methods & Professional Practice</a></div>
+            </div>
           </div>
         </section>
 
