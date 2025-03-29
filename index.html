@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome - Marwa Alkuwari</title>
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marwa Alkuwari | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      font-family: 'Raleway', sans-serif;
       margin: 0;
-      padding: 0;
+      background: linear-gradient(135deg, #e0f7fa, #f9fbe7);
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: #4a90e2;
-      color: white;
-      padding: 2rem;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
     }
-
+    .logo {
+      font-size: 36px;
+      font-weight: 700;
+      color: #0d47a1;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 40px;
+    }
     .button-container {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      margin: 3rem 0;
-      gap: 2rem;
+      gap: 20px;
     }
-
-    .button {
-      padding: 1rem 2rem;
-      background-color: #007acc;
-      color: white;
+    .button-container a {
       text-decoration: none;
-      font-size: 1.2rem;
-      border-radius: 8px;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #0d47a1;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: background-color 0.3s ease;
     }
-
-    .button:hover {
-      background-color: #005fa3;
+    .button-container a:hover {
+      background-color: #1565c0;
     }
-
     footer {
-      margin-top: auto;
-      text-align: center;
-      padding: 1rem;
-      background: #333;
-      color: white;
+      position: absolute;
+      bottom: 20px;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Select a subject to explore:</p>
-  </header>
+  <div class="logo">Marwa Alkuwari Portfolio</div>
+  <div class="subtitle">Explore My Modules and Learning Journey</div>
 
   <div class="button-container">
-    <a href="index.html" class="button">Home</a>
-    <a href="machien%20learning.html.html" class="button">Machine Learning</a>
-    <a href="intelligent-agents.html" class="button">Intelligent Agents</a>
+    <a href="MachineLearning.html">Machine Learning</a>
+    <a href="IntelligentAgents.html">Intelligent Agents</a>
+    <a href="Knowledge-Representation-and-Reasoning.html">Knowledge Representation & Reasoning</a>
+    <a href="ResearchMethods.html">Research Methods & Professional Practice</a>
   </div>
 
   <footer>
     &copy; 2025 Marwa Alkuwari. All rights reserved.
   </footer>
-
 </body>
 </html>
