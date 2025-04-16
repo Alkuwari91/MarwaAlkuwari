@@ -5,57 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intelligent Agents | Marwa Alkuwari Portfolio</title>
   <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .left-panel, .right-panel {
+      flex: 1 1 300px;
+    }
+    .center-panel {
+      flex: 2 1 600px;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .highlight {
+      font-weight: bold;
+    }
+    .preformatted {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      font-family: monospace;
+      white-space: pre-wrap;
+      border-left: 4px solid #888;
+    }
+  </style>
 </head>
 <body>
-  <div id="wrapper">
-    <section id="banner">
-      <div class="content">
-        <header>
-          <h1>Intelligent Agents Module</h1>
-          <p>Exploring Agent-Based Computing and Multi-Agent Systems</p>
-        </header>
-      </div>
-    </section>
-
-    <section id="modules">
-      <header class="major">
-        <h2>Module Breakdown</h2>
-      </header>
-      <ul>
-        <li><strong>Unit 1:</strong> Introduction to Agent-Based Computing</li>
-        <li><strong>Unit 2:</strong> Characteristics of Intelligent Agents</li>
-        <li><strong>Unit 3:</strong> Architectures: Reactive, Deliberative, Hybrid</li>
-        <li><strong>Unit 4:</strong> Multi-Agent Systems and Environments</li>
-        <li><strong>Unit 5:</strong> Communication & Coordination (KQML, FIPA)</li>
-        <li><strong>Unit 6:</strong> Development Project (Team MAS Design)</li>
-        <li><strong>Unit 7:</strong> Logic-Based Agent Reasoning</li>
-        <li><strong>Unit 8:</strong> Planning and Learning in Agents</li>
-        <li><strong>Unit 9:</strong> Applications in Robotics & IoT</li>
-        <li><strong>Unit 10:</strong> Simulation Platforms (NetLogo, JADE)</li>
-        <li><strong>Unit 11:</strong> Evaluation Techniques & Metrics</li>
-        <li><strong>Unit 12:</strong> Ethical Issues and Future Trends</li>
-      </ul>
-    </section>
-
-    <section id="reflection">
-      <header class="major">
-        <h2>Reflective Piece</h2>
-      </header>
-      <p><strong>What:</strong> During this module, I gained deep insights into the design and functionality of intelligent agents, including their autonomy, environment interaction, and problem-solving capabilities. My understanding evolved from basic theoretical frameworks to implementing real MAS design in a group setting.</p>
-      <p><strong>So What:</strong> This knowledge allowed me to reflect critically on agent behavior and system-level dynamics. It strengthened my skills in coordination, delegation, and debugging distributed code. I also improved my ability to assess different agent architectures and choose suitable strategies based on real-world needs.</p>
-      <p><strong>Now What:</strong> I plan to leverage these skills in educational AI tools—specifically adaptive learning environments and intelligent tutoring systems. This experience gave me confidence in integrating agents into domains like e-learning and consultancy solutions, including platforms such as Rasekhon.</p>
-    </section>
-
-    <section id="extras">
-      <header class="major">
-        <h2>Additional Contributions</h2>
-      </header>
+  <div class="container">
+    <div class="left-panel">
+      <h2>Additional Contributions</h2>
       <ul>
         <li><a href="https://alkuwari91.github.io/Rasekhon/" target="_blank">Applied Concepts in: Rasekhon Consultancy Platform</a></li>
         <li>Forum Posts & Discussions on Agent Ethics and Real-World Deployment</li>
         <li>Screenshots & Technical Artefacts provided in appendices</li>
+        <li><a href="#unit4">Unit 4 Activity: Parse Tree</a></li>
       </ul>
-    </section>
+    </div>
+
+    <div class="center-panel">
+      <h2>Reflective Piece</h2>
+      <p><span class="highlight">What:</span> During this module, I gained deep insights into the design and functionality of intelligent agents, including their autonomy, environment interaction, and problem-solving capabilities. My understanding evolved from basic theoretical frameworks to implementing real MAS design in a group setting.</p>
+      <p><span class="highlight">So What:</span> This knowledge allowed me to reflect critically on agent behavior and system-level dynamics. It strengthened my skills in coordination, delegation, and debugging distributed code. I also improved my ability to assess different agent architectures and choose suitable strategies based on real-world needs.</p>
+      <p><span class="highlight">Now What:</span> I plan to leverage these skills in educational AI tools—specifically adaptive learning environments and intelligent tutoring systems. This experience gave me confidence in integrating agents into domains like e-learning and consultancy solutions, including platforms such as Rasekhon.</p>
+
+      <h2 id="unit4">Unit 4 Activity: Constituency-Based Parse Tree</h2>
+      <p>This activity involves creating constituency-based parse trees to demonstrate how intelligent systems can structurally interpret natural language input. This directly supports agent-environment communication and decision-making processes in multi-agent environments.</p>
+
+      <div class="preformatted">
+The government raised interest rates.
+(S
+  (NP (Det The) (N government))
+  (VP (V raised)
+    (NP (N interest) (N rates))))
+
+The internet gives everyone a voice.
+(S
+  (NP (Det The) (N internet))
+  (VP (V gives)
+    (NP (N everyone))
+    (NP (Det a) (N voice))))
+
+The man saw the dog with the telescope. [ambiguous]
+(1)
+(S
+  (NP (Det The) (N man))
+  (VP (V saw)
+    (NP 
+      (NP (Det the) (N dog))
+      (PP (P with) (NP (Det the) (N telescope))))))
+
+(2)
+(S
+  (NP (Det The) (N man))
+  (VP (V saw)
+    (NP (Det the) (N dog))
+    (PP (P with) (NP (Det the) (N telescope)))))
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <h2>Module Breakdown</h2>
+      <ul>
+        <li>Unit 1: Introduction to Agent-Based Computing</li>
+        <li>Unit 2: Characteristics of Intelligent Agents</li>
+        <li>Unit 3: Architectures: Reactive, Deliberative, Hybrid</li>
+        <li><strong>Unit 4: Multi-Agent Systems and Environments (Includes Parse Tree Activity)</strong></li>
+        <li>Unit 5: Communication & Coordination (KQML, FIPA)</li>
+        <li>Unit 6: Development Project (Team MAS Design)</li>
+        <li>Unit 7: Logic-Based Agent Reasoning</li>
+        <li>Unit 8: Planning and Learning in Agents</li>
+        <li>Unit 9: Applications in Robotics & IoT</li>
+        <li>Unit 10: Simulation Platforms (NetLogo, JADE)</li>
+        <li>Unit 11: Evaluation Techniques & Metrics</li>
+        <li>Unit 12: Ethical Issues and Future Trends</li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
