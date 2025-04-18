@@ -6,27 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
 
-  <!-- كود تنسيق زر الرجوع لأعلى الصفحة -->
-  <style>
-    #scrollToTopBtn {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      z-index: 999;
-      background-color: #007BFF;
-      color: white;
-      padding: 12px 16px;
-      border-radius: 50%;
-      text-decoration: none;
-      font-size: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: background-color 0.3s ease;
-    }
+<style>
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    background-color: #444; /* لون رمادي أنيق */
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+  }
 
-    #scrollToTopBtn:hover {
-      background-color: #0056b3;
-    }
-  </style>
+  #scrollToTopBtn:hover {
+    background-color: #222;
+  }
+</style>
+
 </head>
 
   <head>
@@ -35,7 +36,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body id="top" class="is-preload">
+<body id="top" class="is-preload">
+
+  <a href="#top" id="scrollToTopBtn" title="Back to Top">⬆ Top</a>
+
+</body>
+
     <div id="wrapper">
       <div id="main">
         <div class="inner">
