@@ -2024,12 +2024,13 @@ button,
 @media screen and (max-width: 1280px) {
   #sidebar {
     box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
-    height: auto;
+    height: 100%;
     left: 0;
-    position: relative; /* ✅ رجّعناها تتحرك */
-    top: auto;
-    z-index: auto;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
   }
+
 
       #sidebar.inactive {
         box-shadow: none; }
