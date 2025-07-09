@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Marwa Alkuwari | Research Methods and Professional Practice</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      #scrollToTopBtn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 999;
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+      }
+
+      #scrollToTopBtn:hover {
+        background-color: #000;
+      }
+    </style>
+  </head>
+  <body id="top" class="is-preload">
+    <a href="#top" id="scrollToTopBtn" title="Back to Top">⬆ Top</a>
+    <div id="wrapper">
+      <div id="main">
+        <div class="inner">
+          <a href="index.html" class="button small">Back to Home</a>
+
+          <section id="banner">
+            <div class="content">
+              <header>
+                <h1>Welcome to the Research Methods and Professional Practice Module</h1>
+                <p>Explore the foundations of academic research and its professional applications</p>
+              </header>
+              <ul class="actions">
+                <li><a href="#topic1" class="button big">Start Exploring</a></li>
+              </ul>
+            </div>
+            <span class="image object">
+              <img src="rmpp.jpg" alt="Research Methods Overview" />
+            </span>
+          </section>
+
+          <!-- Example Topic Sections (rename and duplicate as needed) -->
+          <section id="topic1">
+            <header class="major">
+              <h2>Topic 1: Understanding Research Paradigms</h2>
+            </header>
+            <p>This section introduces key research philosophies including positivism, interpretivism, and pragmatism. Students will explore how paradigms shape research design and methodology.</p>
+            <ul>
+              <li>Define and distinguish key research paradigms.</li>
+              <li>Understand the philosophical underpinnings of research methods.</li>
+              <li>Evaluate how paradigms influence research questions and outcomes.</li>
+            </ul>
+          </section>
+
+          <!-- Add more topic sections as needed -->
+
+          <section id="reflection">
+            <header class="major">
+              <h2>Final Reflection</h2>
+            </header>
+            <p>This section will contain your personal reflections and key takeaways from the Research Methods and Professional Practice module. You can include what you learned, challenges faced, and how it impacts your academic and professional journey.</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
+
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="#topic1">Topic 1: Research Paradigms</a></li>
+              <!-- Add more links as topics grow -->
+              <li><a href="#reflection">Final Reflection</a></li>
+            </ul>
+          </nav>
+
+          <section>
+            <header class="major">
+              <h2>Get in touch</h2>
+            </header>
+            <ul class="contact">
+              <li class="icon solid fa-envelope"><a href="mailto:marwa.alkuwari@gmail.com">marwa.alkuwari@gmail.com</a></li>
+              <li class="icon solid fa-phone">(974)66162212</li>
+            </ul>
+          </section>
+
+          <footer id="footer">
+            <p class="copyright">&copy; Marwa Alkuwari. All rights reserved. Design by <a href="https://html5up.net">HTML5 UP</a>.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
