@@ -550,5 +550,39 @@
   });
 </script>
 
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section[id^='unit'], section#reflection");
+    const navLinks = document.querySelectorAll("#menu ul li a");
+
+    const sectionOffsets = Array.from(sections).map(section => ({
+      id: section.id,
+      offset: section.offsetTop
+    }));
+
+    function updateActiveLink() {
+      const scrollPosition = window.scrollY + 250; // adjust sensitivity
+
+      let currentId = sectionOffsets[0].id;
+      for (let i = 0; i < sectionOffsets.length; i++) {
+        if (scrollPosition >= sectionOffsets[i].offset) {
+          currentId = sectionOffsets[i].id;
+        }
+      }
+
+      navLinks.forEach(link => {
+        link.parentElement.classList.remove("active");
+        if (link.getAttribute("href") === "#" + currentId) {
+          link.parentElement.classList.add("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", updateActiveLink);
+    updateActiveLink(); // initial call
+  });
+</script>
+
 </body>
 </html>
