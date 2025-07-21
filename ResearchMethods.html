@@ -522,5 +522,28 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+        <script>
+  const sections = document.querySelectorAll("section[id^='unit'], section#reflection");
+  const navLinks = document.querySelectorAll("#menu ul li a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 200; // ضبط حساسية التمرير
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.parentElement.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.parentElement.classList.add("active");
+      }
+    });
+  });
+</script>
+
   </body>
 </html>
